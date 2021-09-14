@@ -19,6 +19,11 @@ function Dashboard() {
       fetchProducts()
   }, [])
 
+  const addToCart = () => {
+      
+  }
+
+  
 
   return (
  
@@ -33,7 +38,7 @@ function Dashboard() {
                                     <h5 className="card-title">{products.title}</h5>
                                     <p className="card-text">{products.description}</p>
                                     <p className="card-text">{products.price}</p>
-                                    <a href="" className="btn btn-primary">Sepete Ekle</a>
+                                    <a href="" className="btn btn-primary" onClick = {addToCart}>Sepete Ekle</a>
                                 </div>
                             </div> )
                     })}

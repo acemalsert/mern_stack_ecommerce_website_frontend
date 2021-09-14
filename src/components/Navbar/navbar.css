@@ -1,0 +1,44 @@
+nav{
+    display:flex;
+    background-color: rgb(17, 17, 17);
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    width: 100%;
+}
+.navbar-list{
+    list-style: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-list li{
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+    transition-timing-function: ease;
+    cursor: pointer;
+    font-size: large;
+}
+.navbar-list li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-list li:hover{
+    background-color: rgb(94, 47, 94);
+}
+.logo{
+    font-size: 30px;
+    width: auto;
+    color:orange;
+}
+.btn-primary{
+    margin-right: 20px;
+}
+.auth button a{
+    color:white;
+    text-decoration: none;
+}

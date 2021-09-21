@@ -28,7 +28,7 @@ nav{
     color: white;
 }
 .navbar-list li:hover{
-    background-color: rgb(94, 47, 94);
+    background-color: rgb(196, 149, 62);
 }
 .logo{
     font-size: 30px;
@@ -41,4 +41,12 @@ nav{
 .auth button a{
     color:white;
     text-decoration: none;
+} 
+
+@media screen and (max-width:700px) {
+    .auth{
+        display: block;
+    }
+    
 }
+

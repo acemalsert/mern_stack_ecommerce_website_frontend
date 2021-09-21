@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import {CartProvider} from "react-use-cart"
+import {AuthContextProvider} from "./context/AuthContext"
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <AuthContextProvider>
+      <CartProvider>
+      <React.StrictMode>
+         <App />
+        </React.StrictMode> 
+  </CartProvider>
+  </AuthContextProvider>,
   document.getElementById('root')
 );
 

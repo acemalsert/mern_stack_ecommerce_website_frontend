@@ -1,10 +1,11 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,Redirect
 } from "react-router-dom";
-
+import React, { useContext } from 'react'
 import './App.css';
+import { AuthContext } from './context/AuthContext'
 import Navbar from './components/Navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.css';
 import Dashboard from './components/Dashboard/Dashboard';
@@ -13,12 +14,16 @@ import Footer from './components/Footer/Footer';
 import Register from "./components/Register/Register";
 import About from "./components/About/About";
 import Login from "./components/Login/Login";
+import Profile from "./components/Profile/Profile.jsx"
+
 
 
 
 function App() {
   return (
+   
 
+  
     <Router>
 
     <div className="App">
@@ -40,16 +45,23 @@ function App() {
           <CartDetail/>
           </Route>
 
-          <Route path="/hakkimizda">
+          <Route exact path="/hakkimizda">
           <About/>
           </Route>
 
+          <Route exact path = "/profil"> 
+                        <Profile/>
+                    </Route>
+
+          <Redirect to="/urunler "/>
           
         </Switch>
         
-        <Footer></Footer>
+        <Footer/>
     </div>
     </Router>
+
+    
   );
 }
 

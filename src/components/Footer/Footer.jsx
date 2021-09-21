@@ -10,7 +10,7 @@ function Footer() {
       <li className="nav-item"><Link to="/urunler" class="nav-link px-2 text-muted">Anasayfa</Link></li>
       <li className="nav-item"><Link to="/hakkimizda" class="nav-link px-2 text-muted">Hakkımızda</Link></li>
     </ul>
-    <p className="text-center text-muted">© 2021 Company, Inc</p>
+    <p className="text-center text-muted">© 2021 ACStore, Inc</p>
   </footer>
 </div>
         </div>

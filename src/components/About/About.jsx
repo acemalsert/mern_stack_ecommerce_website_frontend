@@ -3,34 +3,29 @@ import "./about.css"
 
 function About() {
     return (
-        <div>
-           <label className = "hakkimizda-baslik m-5">
-               <h4>
+        <div className = "container">
+            <div className = "row">
+                <div className = "column mb-5">
+                <label  className = "m-5">
+               <h3 className = "about-header">
                Biz kimiz ? 
-               </h4>
-        <hr/>
-        <br/>
-               <h6>
+               </h3>
+                <hr/>
+                <div className = "row mt-5 ">
+               <h5 className = "about-body">
         ACStore yeni nesil internet alışverişinde zirveyi hedefleyen ve üst düzey müşteri memnuniyetini misyon edinmiş bir şirkettir.
 
-               </h6>
-
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
+               </h5>
+               </div>
+               
                
 
                
                </label>
         </div>
+                </div>
+            </div>
+          
     )
 }
 
